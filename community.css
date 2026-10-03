@@ -1,0 +1,441 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+}
+
+
+/* HEADER */
+
+.main-header {
+  background-color: #560404;
+  padding: 16px 30px;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #ebeaea;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #e5a729;
+  border-bottom: 2px solid #e5a729;
+}
+
+
+/* MAIN */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 20px auto 50px auto;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #111111;
+}
+
+.intro p {
+  color: #555555;
+  font-size: 1rem;
+}
+
+
+/* SECTION HEADERS */
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 1.6rem;
+  color: #111111;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+
+/* LEADERSHIP */
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.leader-card {
+  border: 1px solid #0a0a0a;
+  background-color: #f7f7f7;
+}
+
+.leader-img-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.leader-card img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.leader-info {
+  padding: 14px 16px;
+}
+
+.leader-info .role {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #91812a;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.leader-info .name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+
+/* ORGANIZATIONS */
+
+.orgs-section {
+  margin-top: 50px;
+}
+
+.orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.org-card {
+  border: 1px solid #777777;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.org-card h3 {
+  font-size: 1.15rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.org-logo {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.org-card p {
+  font-size: 0.85rem;
+  color: #555555;
+  line-height: 1.4;
+}
+
+
+/* PATRON SAINT */
+
+.patron-card {
+  margin-top: 70px;
+  display: flex;
+  border: 2px solid #333333;
+  background-color: #f8f0cb;
+}
+
+.patron-image {
+  flex: 1;
+}
+
+.patron-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.patron-details {
+  flex: 1.6;
+  padding: 40px 35px;
+}
+
+.patron-tag {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a67c1e;
+}
+
+.patron-details h2 {
+  font-size: 4rem;
+  color: #111111;
+  margin: 10px 0 8px 0;
+}
+
+.patron-feast {
+  font-size: 0.95rem;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.patron-details p {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+
+/* UPDATES */
+
+.updates-section {
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.update-card {
+  background-color: #ffffff;
+  border: 1px solid #757575;
+  display: flex;
+  flex-direction: column;
+}
+
+.update-img-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.update-card img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.update-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.update-date {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #a67c1e;
+  margin-bottom: 8px;
+}
+
+.update-title {
+  font-size: 1.15rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.update-text {
+  font-size: 0.88rem;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.btn-read-more {
+  display: inline-block;
+  width: fit-content;
+  margin-top: auto;
+  background-color: #f7b928;
+  color: #111111;
+  text-decoration: none;
+  font-size: 0.99rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid #111111;
+  transition: all 0.2s ease;
+}
+
+.btn-read-more:hover {
+  background-color: #d89b14;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  background-color: #560404;
+  color: #d1d1d1;
+  padding: 40px 20px 25px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #560404;
+}
+
+.footer-brand h3 {
+  color: #e5a729;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.footer-brand p {
+  font-size: 0.82rem;
+  color: #cccccc;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #e5a729;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 0.78rem;
+  color: #aaaaaa;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 990px) {
+
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .orgs-grid,
+  .updates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav ul {
+    gap: 15px;
+  }
+
+  .leadership-grid,
+  .orgs-grid,
+  .updates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patron-card {
+    flex-direction: column;
+  }
+
+  .patron-details h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

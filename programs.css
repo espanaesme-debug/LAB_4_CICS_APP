@@ -1,0 +1,432 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+}
+
+
+/* HEADER */
+
+.main-header {
+  background-color: #560404;
+  padding: 16px 30px;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #ebeaea;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #e5a729;
+  border-bottom: 2px solid #e5a729;
+}
+
+
+/* MAIN */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* SECTION HEADERS */
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 1.6rem;
+  color: #111111;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+
+/* DEGREE PROGRAMS INTRO */
+
+.program-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.program-intro-text {
+  width: 50%;
+}
+
+.program-intro-text h1 {
+  font-size: 2rem;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.program-intro-text p {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.program-intro-image {
+  width: 50%;
+}
+
+.program-intro-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* OUR PROGRAMS */
+
+.our-programs {
+  margin-bottom: 60px;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.program-card {
+  border: 1px solid #777777;
+  background-color: #ffffff;
+  padding: 22px 20px;
+}
+
+.program-tag {
+  display: inline-block;
+  padding: 4px 9px;
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #111111;
+}
+
+.cs-tag {
+  background-color: #26a7e0;
+}
+
+.is-tag {
+  background-color: #f29a22;
+}
+
+.it-tag {
+  background-color: #43d34b;
+}
+
+.program-card h3 {
+  font-size: 1.1rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 0.85rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+
+/* PROGRAM COMPARISON */
+
+.comparison-section {
+  margin-bottom: 60px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f7b928;
+  color: #111111;
+  text-align: left;
+  padding: 12px;
+  font-size: 0.85rem;
+  border: 1px solid #aaaaaa;
+}
+
+td {
+  padding: 12px;
+  font-size: 0.8rem;
+  color: #444444;
+  border: 1px solid #aaaaaa;
+}
+
+
+/* DEPARTMENTS */
+
+.departments-section {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dept-card {
+  border: 1px solid #777777;
+  border-radius: 5px;
+  padding: 26px 20px;
+  background-color: #ffffff;
+}
+
+.dept-card h3 {
+  font-size: 1.15rem;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.dept-card p {
+  font-size: 0.85rem;
+  color: #555555;
+  line-height: 1.45;
+}
+
+
+/* RECOGNITIONS */
+
+.recognitions-band {
+  background-color: #fdf8e2;
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.recognitions-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.recognitions-box {
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.recognitions-box h2 {
+  font-size: 1.9rem;
+  color: #111111;
+  margin-bottom: 30px;
+}
+
+.recognition-entry {
+  margin-bottom: 40px;
+}
+
+.recognition-entry:last-child {
+  margin-bottom: 0;
+}
+
+.recognition-logo {
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 200px;
+  height: auto;
+}
+
+.pacucoa-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.recognition-entry h3 {
+  font-size: 1.1rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.recognition-entry p {
+  font-size: 1.1rem;
+  color: #555555;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  background-color: #560404;
+  color: #d1d1d1;
+  padding: 40px 20px 25px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #560404;
+}
+
+.footer-brand h3 {
+  color: #e5a729;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.footer-brand p {
+  font-size: 0.82rem;
+  color: #cccccc;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: #e5a729;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 0.78rem;
+  color: #aaaaaa;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .program-intro {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .program-intro-text,
+  .program-intro-image {
+    width: 100%;
+  }
+
+  .programs-grid,
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recognitions-band {
+    padding: 40px 15px;
+  }
+
+  .recognitions-box {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav ul {
+    gap: 15px;
+  }
+
+  .program-intro-image img {
+    height: 200px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
